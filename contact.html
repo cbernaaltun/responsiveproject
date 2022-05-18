@@ -8,7 +8,15 @@
     <meta name="description" content="Java Patisserie Web Site">
     <meta name="author" content="Berna and Humeyra">
     <title>JAVA Patisserie</title>
-	<link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Advent+Pro:wght@300&family=Alex+Brush&family=Exo:ital@1&family=Rajdhani&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+    <link href="jquery-ui.css" rel="stylesheet">  
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script> 
+    <script src="script.js"></script>
 </head>
 <body data-target=".navbar" data-offset="40" id="home">
     
@@ -19,7 +27,7 @@
                 <img src="images/cake (2).png" alt="patiesserie brand icon">
             </a>
                 
-            <a class="nav-link text-primary" href="index.html">JAVA PATISSERIE</a>
+            <a class="nav-link text-primary brand-name" href="index.html">Java Patisserie</a>
                 
         </div>
     </nav>
@@ -56,7 +64,7 @@
  
 
     <!-- Contact Section -->
-    <section id="book-table">
+    <section id="send">
         <div class="container">
             <div class="row contactdiv1">
                 <div class="col-md-6">
@@ -65,8 +73,7 @@
                       
                         <div class="slider">
                           <div style="background-image: url(https://images.pexels.com/photos/4040852/pexels-photo-4040852.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
-                                  <h2>PURE <b>CSS</b> SLIDESHOW</h2>
-                                  <p>Responsive Slideshow Gallery created using CSS only<br>by Roko</p>
+                                
                               </div>
 
                         </div>
@@ -76,18 +83,33 @@
                 <div class="col-md-6">
                     <form>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="Your Name">
                         </div>
                         <div class="form-group">
-                            <input type="tel" class="form-control" name="phone" placeholder="Your Phone">
+                            <input id="tool-tip-for-phone" title="We protect your information and do not share with third parties!" type="tel" class="form-control" name="phone" required placeholder="Your Phone">
                         </div>
+                      
+
                         <div class="form-group">
-                            <input type="datetime-local" class="form-control" name="date">
+                            <input type="text" class="form-control " name="E-mail" required placeholder="Your E-mail" required pattern="@gmail*">
+                           
+
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control " name="Message"  required placeholder="Your Message">
+                        </div>
+
+                        
+                        <!--<div class="form-group">
+                            <input type="datetime-local" class="form-control " name="date">
                         </div>
                         <div class="form-group">
                             <input type="number" class="form-control" name="seats" placeholder="Seats">
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Book A Table</button>
+                        </div> -->
+                       
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Send</button>
                         <small class="form-text text-muted ">We don't span customers. Check our <a href="#">Privacy Policy</a></small>
                     </form>
                 </div>
