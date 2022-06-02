@@ -8,9 +8,28 @@ $(document).ready(function () {
         var json = $.parseJSON(data);
         // display results
 
-        $(".medudiv1 > div > a > div > img").attr("src", json.menu[0].image);
-        console.log(json.menu[0].image);
+        $("#firstcake").attr("src", json.menu[0].image);
+        $("#secondcake").attr("src", json.menu[1].image);
+        $("#thirdcake").attr("src", json.menu[2].image);
+        $("#fourthcake").attr("src", json.menu[3].image);
+        $("#fifthcake").attr("src", json.menu[4].image);
+        $("#sixthcake").attr("src", json.menu[5].image);
        
+    }
+  });
+  $.ajax({
+    url: "https://my-json-server.typicode.com/HumeyraTEZCAN/api-test/images",
+    //handle as text
+    dataType: "text",
+    success: function (data) {
+        //data downloaded + pass data
+        var json = $.parseJSON(data);
+        // display results
+        $("#firstimg").css("background-image", "url(" + json[0].url + ")");
+        $("#secondimg").css("background-image", "url(" + json[1].url + ")");
+        $("#thirdimg").css("background-image", "url(" + json[2].url + ")");
+        $("#fourthimg").css("background-image", "url(" + json[3].url + ")");
+  
     }
   });
 });
