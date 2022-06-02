@@ -1,3 +1,24 @@
+$(document).ready(function () {
+  $.ajax({
+    url: "json_files/menu.json",
+    //handle as text
+    dataType: "text",
+    success: function (data) {
+        //data downloaded + pass data
+        var json = $.parseJSON(data);
+        // display results
+
+        $(".medudiv1 > div > a > div > img").attr("src", json.menu[0].image);
+        console.log(json.menu[0].image);
+       
+    }
+  });
+});
+
+
+
+
+
 //jquery preloader plugin bu normal plugin
 let text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dictum felis lacinia, consectetur mi feugiat, / faucibus nisl. Aliquam sollicitudin scelerisque lacus vitae malesuada. Cras tempor sapien lacus, nec hendrerit nibh viverra at. In et / lacus nisi. Mauris bibendum, elit eget malesuada laoreet, ex ligula lacinia felis, et consequat quam sapien id quam. Morbi id turpis nisi. Phasellus vitae lorem at / ligula suscipit pulvinar. Phasellus id lacus vel nunc vestibulum semper. Integer et congue lacus. Vestibulum in bibendum lorem, eu volutpat velit. / Praesent tempor porttitor neque, at rutrum nulla interdum a. Suspendisse potenti. Suspendisse vel dui eget metus accumsan faucibus dictum ac orci./ Morbi in mi sit amet lectus convallis ultrices et in mauris.";
 const myArray = text.split("/");

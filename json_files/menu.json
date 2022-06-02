@@ -1,0 +1,48 @@
+{"Menu":[
+	{
+		"title": "Coffee",
+		"price": "$44",
+		"image": "images/drink1.jpg",
+		"text": "Indispensable for winter days, our favorite coffee"		
+	}
+   ,
+
+   {
+	"title": "Calming Tea",
+	"price": "$35",
+	"image": "images/drink3.jpg",
+	"text": "The perfect calming tea. For those who want to drink tea in peace"		
+},
+
+     
+{
+	"title": "Cupcake",
+	"price": "$24",
+	"image": "images/cake1.jpeg",
+	"text": "Moist coconut cake, pineapple filling, topped with toasted coconut buttercream and a cherry"		
+},
+  
+{
+	"title": "Lemonade",
+	"price": "$30",
+	"image": "images/drink2.jpg",
+	"text": "refreshing lemonade with fresh taste"		
+},
+{
+	"title": "Lemon Cake",
+	"price": "$18",
+	"image": "cake4.jpeg",
+	"text": "The intense and cool form of an icy summer lemonade is in this cake. Additive-free, lemon density turns into a delicious taste with vanilla sponge cake."		
+},
+{
+	"title": "Vanilla Cake",
+	"price": "$25",
+	"image": "images/cake2.jpeg",
+	"text": "A dreamy cake decorated with fresh fruits that will make a difference on your special days; vanilla cake"		
+}
+
+
+
+
+
+]}
